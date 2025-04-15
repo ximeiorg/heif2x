@@ -1,0 +1,3 @@
+name = "heif2x"
+compatibility_date = "2025-04-03"
+assets = { not_found_handling = "single-page-application" }
