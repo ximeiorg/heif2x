@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { ChooseFile } from "./ChooseFile";
 import convert from "heic-convert/browser";
 
@@ -47,10 +46,11 @@ function App() {
 
   return (
     <div className="max-w-2xl mx-auto h-full relative">
-      <h1 className="text-3xl font-bold text-zinc-50 mb-6">
+      <h1 className="text-3xl font-bold text-zinc-50 mb-6 my-4 text-center">
         HEIC to JPG/PNG Converter
       </h1>
       <ChooseFile onUploaded={(files) => handleUpload(files)} />
+      <div>Note: Your images will not be uploaded to the server; the entire process will take place within the browser.</div>
       {chooseFiles.length > 0 && (
         <div className="text-zinc-50">
           <div className="flex justify-center gap-4 mb-4">
@@ -99,7 +99,7 @@ function App() {
         </div>
       )}
 
-      <footer className="text-zinc-50 flex items-center justify-start gap-2 mt-4 absolute left-0 right-0 bottom-0">
+      <footer className="text-zinc-50 flex items-center justify-center gap-2 mt-4 absolute left-0 right-0 bottom-0">
         <div className="text-left text-md text-zinc-400">© 2024 | All rights reserved</div>
         <div className="flex items-center justify-start gap-2 text-zinc-300">
           <a className="text-md" href="https://blog.ximei.me">BLOG</a>
