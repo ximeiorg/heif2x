@@ -50,7 +50,7 @@ function App() {
         HEIC to JPG/PNG Converter
       </h1>
       <ChooseFile onUploaded={(files) => handleUpload(files)} />
-      <div>Note: Your images will not be uploaded to the server; the entire process will take place within the browser.</div>
+      <div className="text-zinc-400 mb-4 text-sm">Note: Your images will not be uploaded to the server; the entire process will take place within the browser.</div>
       {chooseFiles.length > 0 && (
         <div className="text-zinc-50">
           <div className="flex justify-center gap-4 mb-4">
